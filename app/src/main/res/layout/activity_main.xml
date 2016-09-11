@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -10,15 +14,20 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="id.sch.smktelkom_mlg.tugas01.xirpl1027.apps_pendaftaran.MainActivity">
 
+
     <TextView
+        style="@style/Base.TextAppearance.AppCompat.Headline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:text="SMK Telkom Malang" />
 
     <TextView
         android:id="@+id/textView2"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:text="Pendaftaran Peserta Didik Baru 2016/2017" />
 
     <ImageView
@@ -78,7 +87,46 @@
             android:text="Perempuan" />
     </RadioGroup>
 
-    <Button
+        <TextView
+            android:id="@+id/textViewPHB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hobby" />
+
+        <CheckBox
+            android:id="@+id/checkBoxBC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Membaca" />
+
+        <CheckBox
+            android:id="@+id/checkBoxTL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Menulis" />
+
+        <CheckBox
+            android:id="@+id/checkBoxLA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Lainnya" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Asal Kota" />
+
+        <Spinner
+            android:id="@+id/spinnerKota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/Kota" />
+
+        <Button
         android:id="@+id/buttonOK"
         style="@style/Base.TextAppearance.AppCompat.Subhead"
         android:layout_width="wrap_content"
@@ -89,10 +137,31 @@
 
     <TextView
         android:id="@+id/textViewHasil"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:gravity="center_horizontal"
-        android:padding="16dp"
+        android:layout_gravity="center_horizontal"
         android:text="Hasil" />
-</LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewJenisKelamin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="JenisKelamin" />
+
+        <TextView
+            android:id="@+id/textViewHobby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Hobby" />
+
+        <TextView
+            android:id="@+id/textViewKot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="New Text" />
+
+    </LinearLayout>
+</ScrollView>
